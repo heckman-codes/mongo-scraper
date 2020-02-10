@@ -83,3 +83,11 @@ p {
     width: inherit;
     max-width: inherit;
 }
+
+h6 {
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    color:black;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
