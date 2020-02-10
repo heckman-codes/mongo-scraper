@@ -15,7 +15,7 @@ var PORT = 3005;
 
 var app = express();
 
-var MONGODB_URI = process.env.MONGODB_URL || "mongodb://localhost/tedtalks";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/tedtalks";
 
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
