@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://heroku_j8jk0krm@ds047437.mlab.com:47437/heroku_j8jk0krm", { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI || "mongodb://localhost/tedtalks", { useNewUrlParser: true });
 
 
 app.get("/scrape", function (req, res) {
