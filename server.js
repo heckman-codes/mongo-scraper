@@ -11,18 +11,18 @@ var cheerio = require("cheerio");
 // Require all models
 var db = require("./models");
 
-var PORT = 3005;
+var PORT = process.env.PORT || 3005;
 
 var app = express();
 
-// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/tedtalks";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/tedtalks";
 
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://heroku_j8jk0krm:rdlibvnqvlog0tuhhg67ad8que@ds047437.mlab.com:47437/heroku_j8jk0krm", { useNewUrlParser: true });
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
 
 app.get("/scrape", function (req, res) {
