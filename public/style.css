@@ -1,0 +1,61 @@
+
+#articles {
+  display: inline-block;
+  overflow: auto;
+  width: 100%;
+}
+
+#notes {
+  width: 100%;
+}
+
+textarea, input {
+  display: block;
+  width: 100%;
+  background-color: #FCF5C7;
+}
+input {
+  height: 100px;
+  font-size: 24px;
+  color: black;
+}
+textarea {
+  min-height: 100px;
+  font-size: 18px;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: crimson;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color:black;
+    font-size: 16px;
+}
+
+.article-img {
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+.speaker-name {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 18px;
+    color: gray;
+}
+
+.article-title {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color:black;
+    font-size: 22px;
+    cursor: pointer;
+}
