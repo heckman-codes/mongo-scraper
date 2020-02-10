@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect("mongodb://heroku_j8jk0krm:rdlibvnqvlog0tuhhg67ad8que@ds047437.mlab.com:47437/heroku_j8jk0krm", { useNewUrlParser: true });
 
 
 app.get("/scrape", function (req, res) {
