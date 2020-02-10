@@ -71,6 +71,13 @@ p {
     cursor: pointer;
 }
 
+.article-title:not:first-child {
+    margin-top: 10px;
+}
+
+.row {
+    margin-bottom: 0px;
+}
 .note-input {
     position: fixed;
     width: inherit;

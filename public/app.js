@@ -11,6 +11,8 @@ $.getJSON("/articles", function (data) {
     $(textDiv).append("<p data-id='" + data[i]._id + "' class='speaker-name'>" + data[i].speaker + "</p><p class='article-title' data-id='" + data[i]._id + "'>" + data[i].title + "</>");
     $(articleDiv).append(articleImg).append(textDiv);
     $("#articles").append(articleDiv);
+    $("#articles").append($("<div>").addClass("divider"));
+
     // $("#articles").append("<p data-id='" + data[i]._id + "'>" + data[i].title + "<br />" + data[i].url + "</p>");
   }
 });
