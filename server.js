@@ -15,14 +15,14 @@ var PORT = 3005;
 
 var app = express();
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/tedtalks";
+// var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/tedtalks";
 
 app.use(logger("dev"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
 
 
 app.get("/scrape", function (req, res) {
